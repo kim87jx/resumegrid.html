@@ -1,0 +1,274 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">			
+			<h1>Elizabeth Kim</h1>
+
+
+<!-- Google Font Loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pacifico&family=Quattrocento&family=Satisfy&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pacifico&family=Quattrocento:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+<!-- End Google Font -->
+
+
+
+		<style>
+			main {
+				font-size:  1rem; 
+				background-image: url("photos/lace-200.jpeg"); 
+				text-align: justify-all; 
+				text-align: center;
+				color: mistyrose; 
+				font-family: 'Quattrocento', serif;	
+
+				display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: [header-start] 1fr [edu-start] .25fr [edu-content-start] 1fr [exp-start] .25fr [exp-content-start] 1.5fr [footer-start] 1fr;
+                grid-template-areas: 
+                "photo skills"
+                "edu edu"
+                "degrees minors"
+                "exp exp"
+                "graphicdesign DVC"
+                "footer footer" ;
+			}
+
+			#photo img { width: 100%; 
+
+			}
+
+			header { grid-area: photo;
+      		    display: grid;
+       		   	grid-template-columns: 1fr 1fr;
+        		grid-template-rows: 1fr;
+        		grid-template-areas: "pic contact";
+       			padding: 9px;
+            }
+
+             #skills { grid-area: skills;}
+            #edu { grid-area: edu;}
+            #degrees { grid-area: degrees;}
+            #minors { grid-area: minors;}
+            #exp { grid-area: exp;}
+            #graphicdesign { grid-area: graphicdesign;}
+            #DVC { grid-area: DVC;}
+            footer { grid-area: footer;}
+            #contact { grid-area: contact;}
+            #photo { grid-area: pic;}
+
+             #edu, #exp { 
+            	background-color: #ccc;
+            	padding: 9px;
+            }
+
+            #degrees, #graphicdesign {
+            	border-right: 3px solid #ccc;
+            	margin-right: 9px;
+            	padding: 9px;
+            }
+
+            #minors, #dvc {
+            	border-left: 3px solid #ccc;
+            	margin-left: 9px;
+            	padding: 9px;
+            }
+
+            #graphicdesign, #DVC {
+            	border-bottom: 3px solid #ccc;
+            }
+
+            #contact {
+            	margin-left: 9px;
+            	border: 3px solid #ccc;
+            	padding: 0 9px;
+            }
+
+            #skills {
+            	margin-top: 20px;
+            }
+
+			#contact, #skills, #edu, #degrees, #minors, #exp, #graphicdesign, #DVC{ 
+				background-color: rgba(78, 91, 49, 0.3);, 1;
+				margin-left: 100px;
+				margin-right: 100px;
+				padding-bottom: 35px;
+				text-shadow: 1.5px 1px darkolivegreen; 
+				padding-left:  0;
+				text-align: center;
+				list-style-position: inside;
+			}
+			
+		
+
+
+			h1 {
+				font-family: 'Alex Brush', cursive;
+				font-size: 5rem; 
+				text-align: center;
+				color: mistyrose;
+				text-shadow: 3px 3px darkolivegreen; 
+
+			}
+
+			h2 {
+				font-family: 'Alex Brush', cursive;
+				text-align: center;
+				font-size: 2.5rem;  
+			}
+
+			h3 {
+				font-family: 'Quattrocento', serif;
+				text-align: center;
+			}
+
+
+	</style>
+</head>
+
+<body>
+	<main>
+		<header>
+				<div id="photo">
+					<img src="photos/mee-200.jpg" alt="me"> 
+				</div>
+				<div id= "contact">
+					<h2>Contact </h2>
+					<p>1241 Frost Pl.<br>
+						Harrisonburg, VA 22802
+					</p>
+				</div>
+				
+		</header>
+
+				<div id="skills">
+					<h2>Skills & Specialties</h2>
+					<h3>Languages</h3>
+					<p>English, Korean
+					</p>
+					<h3>Servers & Operating Systems</h3></p>
+					<p>Windows, Mac
+					</p>
+					<h3>Applications</h3>
+					<p>Adobe Creative Cloud (Lightroom, Premiere Pro), Microsoft Office (Word), Google (Drive, Photos, Sheets, Slides)</p>
+
+				</div>
+
+				<div id="edu">
+					<h2>Education</h2>
+				</div>
+				<div id="degrees">
+
+
+					<p><h4>Media Arts and Design - BA Major Interactive Design Concentration </h4></p>
+
+					<p><strong>James Madison University</strong>, Harrisonburg, VA</p>
+					<ul>
+						<li>August 2020 - present</li>
+						<li>15 credits completed in SMAD</li>
+						<li>GPA 3.070/4.0</li>
+					</ul>
+				</div>
+				<div id="minors">
+						<p><h4>Asian Studies Minor</h4>
+						</p>	
+						<p><strong>James Madison University</strong>, Harrisonburg, VA</p>
+						<ul>
+							<li>August 2020 - present</li>
+							<li>6 credits completed in Asian Studies</li>
+							<li>GPA 3.070/4.0</li>
+						</ul>
+
+						<p><h4>Sociology Minor</h4>
+						</p>
+						<p><strong>James Madison University</strong>, Harrisonburg, VA</p>
+						<ul>
+							<li>August 2020 - present</li>
+							<li>3 credits completed in Sociology</li>
+							<li>GPA 3.070/4.0</li>
+						</ul>
+
+				</div>
+
+				<div id="exp">
+						<h2>Experience</h2>
+				</div>
+
+					<div id="graphicdesign">
+
+						<h3>Graphic design</h3>					
+
+						<p><h4>Instagram, Facebook, Twitter - <a href="https://instagram.com/actionforum?igshid=Y2ZmNzg0YzQ=">@ActionForum</a></h4></p>
+
+						<ul>
+							<li>June 2020 - July 2020</li>
+							<li>Graphic designer, outreach team, research team, and writing team</li>
+							<li>Created informational graphics</li>
+							<li>Strategies to grow a social following</li>
+							<li>Find story contents</li>
+							<li>Creator of @actionforum petition Action Forum Petition, Article on Action Forum </li>
+						</ul>
+					
+					
+						<p><h4>Instagram - <a href="https://www.instagram.com/theasianarticles/?hl=en">@TheAsianArticles</a></h4></p>
+						
+						<ul>
+							<li>August 2020 - October 2020</li>
+							<li>Creates designs for all Instagram posts and other graphics that may be needed </li>
+							<li>Must make designs consistent with the aesthetics and branding of The Asian Articles</li>
+							<li>Preferably versed in Canva and other design software</li>
+						</ul>
+					
+					<ul>
+						<p><h4>Cavalier Theatre </h4></p>
+						
+						<ul>
+							<li>Graphic design for Improvathon 86 promotional poster</li>
+						</ul>
+					</div>
+
+					<div id="DVC">
+						<h3>Digital Video & Cinema</h3>
+						
+						<p><h4>Dalton Wedding Video (2021)</h4></p>
+
+						<ul>
+							<li>Filming, Directing, and post-production of a wedding montage</li>
+							<li>Editing raw footage of ceremony</li>
+						</ul>
+					
+					
+						<p><h4>Cavalier Theatre (2017-2020)</h4></p>
+
+						<ul>
+							<li>Missed the Boat (cinematographer) - VHSL Film Festival 2nd place</li>
+							<li>Let Go (writer / cinematographer / director / editor)</li>
+							<li>Sheriff of Puddington (cinematographer)</li>
+							<li>The History of Jom Tones (cinematographer / writer / director / editor)</li>
+							<li>Promotional videos for the Blue Ridge Area Food Bank fundraiser</li>
+							<li>Promotional video for the Blue Ridge Area Food Bank</li>
+							<li>Promotional videos for Footloose, The Musical</li>
+							<li>Promotional videos for Disaster!, The Musical</li>
+							<li>All promotional videos can be found on <a href="https://www.instagram.com/cavaliertheatre/?hl=en">@cavaliertheatre on Instagram</a></li>
+							<li>Animation for @benben.son on Tiktok</li>
+							<li>Created and designed an animation to be used as a profile video and Youtube Intro</li>
+							<li>Animation for UVA</li>
+							<li>Worked under a contract with Ben Benson in order to create an animation tutorial for an upcoming app</li>
+						</ul> 
+					</div>
+
+					<footer>
+						<p>&copy; 2022 EJK</p>
+					</footer>
+
+				</main>
+			</body>
+		</html>
